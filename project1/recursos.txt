@@ -1,0 +1,20 @@
+Anfitrión
+ec2-18-235-45-217.compute-1.amazonaws.com
+
+Base de datos
+d8u04g900l54m0
+
+Usuario
+vubwftbaxwlciv
+
+Puerto
+5432
+
+Contraseña
+6781e79a9326371f458581b620a3501bbe09f323d59fecedfd9d2c37a10736f3
+
+URI
+postgresql://vubwftbaxwlciv:6781e79a9326371f458581b620a3501bbe09f323d59fecedfd9d2c37a10736f3@ec2-18-235-45-217.compute-1.amazonaws.com:5432/d8u04g900l54m0
+
+Heroku CLI
+heroku pg:psql postgresql-horizontal-64668 --app project1-hassiel

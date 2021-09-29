@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}
+    BOOKS
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="../static/index.css">
+<div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+    <table class="table">
+      <thead>
+        <tr>
+          <th>isbn</th>
+          <th>Title</th>
+          <th>Athor</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for chang in libros %}
+        <tr>
+          <td>{{ chang ["isbn"] }}</td>
+          <td>{{ chang ["title"] }}</td>
+          <td>{{ chang ["author"] }}</td>
+          <td>{{ chang ["year"] }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  
+
+{% endblock %}
+
